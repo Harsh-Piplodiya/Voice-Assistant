@@ -7,11 +7,10 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import Sequential
 from keras.layers import Dense,Dropout,Activation
 from keras.optimizers import SGD
-# nltk.load('english.pickle')
-# nltk.download('punkt')
+
 lemmit = WordNetLemmatizer()
-intents=json.loads(open('G:/Bachelor Project/BCA Voice Asssistant Project/intents.json').read())
-# print(intents)
+intents=json.loads(open('path of the JSON file /intents.json').read())
+
 words=[]
 classes=[]
 documents = []
@@ -25,15 +24,11 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-# print(documents)
-# print(documents) 
 
 words= [lemmit.lemmatize(word) for word in words if word not in ignore_letters]
 words = sorted(set(words))
-# print(words)
-# print('class:\n',classes)
+
 classes = sorted(set(classes))
-# print('class set:\n',classes)
 
 pickle.dump(words, open('words.pkl','wb'))
 pickle.dump(classes, open('classes.pkl','wb'))
@@ -68,7 +63,9 @@ for document in documents:
 #     output_row= list(output_empty)
 #     output_row[classes.index(document[1])] = 1
 #     training.append([bag, output_row])
+    
 # #-------------------------------Training Our Nural Network----------------------------
+    
 print('training\n',(training))
 random.shuffle(training)
 training = np.array(training)
@@ -88,4 +85,3 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 hist=model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5,verbose=1)
 model.save('chatbotmodel.h5',hist)
 print('Done')
-

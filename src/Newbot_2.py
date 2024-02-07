@@ -7,7 +7,6 @@ import numpy as np
 import pyttsx3
 import nltk
 from nltk.stem import WordNetLemmatizer
-# import pywintypes
 from keras.models import load_model
 import datetime
 import google
@@ -17,14 +16,13 @@ import calendar
 import os
 import psutil
 import pyjokes
-#import frontend as ft
 
 
 # here we are putting python text-to-speech convertor in 'engine' variable
 engine = pyttsx3.init()
-# here we get the voices present in the pyttsx3 and put them in 'voices
+# here we get the voices present in the pyttsx3 and put them in 'voices'
 voices = engine.getProperty('voices')
-# here we set the '1' index value voice in the engine as our default voice
+# here we set the index value '1' voice in the engine as our default voice
 engine.setProperty('voice', voices[1].id)
 
 
@@ -38,7 +36,7 @@ def talk(text):
 listener = sr.Recognizer()
 
 lemmit = WordNetLemmatizer()
-intents = json.loads(open('G:/Bachelor Project/BCA Voice Asssistant Project/intents.json').read())
+intents = json.loads(open('path of the JSON file/intents.json').read())
 
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
@@ -143,7 +141,7 @@ def get_response(intents_list, intents_json, message):
             return result
             break
 
-
+#-------------------------------------------------------------------------------------------------------------
 
 def create_note():
     print("what do you want to write in the note?")

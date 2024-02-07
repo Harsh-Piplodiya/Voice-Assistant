@@ -4,11 +4,11 @@ from Newbot_2 import pridict_class, get_response, talk
 import json
 import threading
 from customtkinter import *
-intents = json.loads(open('G:/Bachelor Project/BCA Voice Asssistant Project/intents.json').read())
+intents = json.loads(open('path of the JSON file/intents.json').read())
 root = ctk.CTk(fg_color="#2B2B2B")
 root.geometry("400x580+950+110")
 root.title("Voice Assistant")
-root.iconbitmap('boticon.ico')
+root.iconbitmap('Path of boticon.ico')
 
 
 u = 0
@@ -118,10 +118,10 @@ def botcallchat():  # This funtion is to call the bot for input
 from PIL import ImageTk,Image
 butsub=CTkButton(f1, text='Send', command=botcallchat)
 butsub.pack(side=RIGHT)
-btn = CTkButton(root,text=None,image=ImageTk.PhotoImage(Image.open('G:/Bachelor Project/BCA Voice Asssistant Project/bmic.png').resize((30,30))), command=start_bot,width=10,height=10)
+btn = CTkButton(root,text=None,image=ImageTk.PhotoImage(Image.open('path of bmic.png').resize((30,30))), command=start_bot,width=10,height=10)
 btn.pack(side=BOTTOM)
 
-#----------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 import random
 def wakeword():
