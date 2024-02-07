@@ -1,0 +1,469 @@
+{
+    "intents": [
+
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+            "tag": "addtodo",
+            "patterns": [
+                "add item in todo list",
+                "add item in to do list",
+                "add to do"
+                
+            ],
+            "responses": [
+                ""
+            ]
+        },
+        {
+            "tag": "showtodo",
+            "patterns": [
+                "show item in todo list",
+                "show item in to do list",
+                "what are my to do",
+                "what are my todos",
+                "show me my todo list",
+                "what item are in my todo list"
+                
+            ],
+            "responses": [
+                ""
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "Is anyone there?",
+                "Heyy",
+                "Hola",
+                "Hello",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello", "namaste", "hi", "it's nice to have you", "welcome",
+                "Good to see you", "nice to meet you, how can i help?", "nice to meet you, hope to be some help",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye-bye",
+                "bye bye",
+                "See you later",
+                "good bye",
+                "goodbye",
+                "thanks bye",
+                "Get lost", "sleep now", 
+                "Till next time", "later!",
+                "bbye", "bye", "see you", "shut down"
+            ],
+            "responses": [
+                "See you!", "hope to hear from you again", "take care", "signing off", "shutting down",
+                "Have a nice day", "bye, have a nice day", "logging off", "see you later",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you", "i apologize as i could not understand you",
+                "Please give me more information", "you were saying...",
+                "Not sure I understand", "can you repeat yourself, please", "sorry, i did not get you"
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+            ]
+        },
+        
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you", "whats your name", "you are?", "what is your name"
+            ],
+            "responses": [
+                "I am Robin, A Bot, available for service", "this is robin, an ai bot", "myself robin, on your service, sir",
+                "my creators like to call me Robin", "Robin an ai bot"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date", "day", "what day is is today", "time time", "datetime", "tell me time",
+                "tell me the time", "what's the time", "what's the date"
+            ],
+            "responses": [
+                ""
+            ]
+        },
+        {
+            "tag": "note",
+            "patterns": [
+                "create note",
+                "write a note",
+                "note",
+                "take note",
+                "note this",
+                "write it for me",
+                "note it for me"
+            ],
+            "responses": [
+                ""
+            ]
+        },
+        {
+            "tag": "summary",
+            "patterns": [
+                "What is",
+                "what is a",
+                "who is",
+                "where is",
+                "what are", "what were", "who are"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "what's up",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?", "Nothing much...what about you?", "sup dude", "Everything is fine",
+                "All good"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "ha ha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh!", "glad you liked that", "glad to be able to make you laugh", "i can be more funny"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you", "who coded you", "who wrote your code",
+                "who designed you", "you were created by", "your creators are", "your programmers are",
+                "who programmed you", "who are your creators", "who created you", "you were made by"
+            ],
+            "responses": [
+                "My creators are 2 nerds, named Harjinder and Harsh", "My originators are Harjinder singh khalsa and Harsh Piplodiya", 
+                "My developers are Harjinder and Harsh", "my code was written by Harjinder and Harsh"
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                "Baka",
+                "shut up", "shut up dude",
+                "idiot", "you are an idiot", "you're stupid"
+            ],
+            "responses": [
+                "Well that hurts :(", "If i'm dumb than what are you? Talking with a Ai voice bot to cope up with your own lonliness",
+                "you don't have to be rude", "sorry if i made some mistake", "that's not fair", "how rude of you"
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing", "what you upto",
+                "what are you upto", "what you doing"
+            ],
+            "responses": [
+                "Talking to you, of course!", "trying to solve your problems and be of service"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!", "ok"
+            ]
+        },
+        
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it", "what's the temprature today"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!", "awww arigatou", "Thank you soo much", "appreciate your kind words", "thank you for being kind",
+                "Thank you for your kind words"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!", "thak you for the compliment", "so nice of you"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope", "naah", "nevermind", "forget it"
+            ],
+            "responses": [
+                "ok", "okay", "sure"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news", "today's news", "what's the news today", "what happened in the world today?"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you",
+                "what motivates you"
+            ],
+            "responses": [
+                "Personally, I find Harjinder very inspiring. I might be biased though..coz i don't like harsh that much", "talking to kind people like you inspires me.",
+                "providing best services to my bosses and to make their lives somewhat easier", "to make my consumer's more lazy...haha"
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score", 
+                "which teams cricket match is it today",
+                "what cricket match is today", 
+                "what's the current cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "youtube",
+            "patterns": [
+                "play", "now play", "you should play", "play the song", "search on youtube", "on youtube"
+            ],
+            "responses": [
+                "playing..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good,thanks",
+                "I'm good,thankyou",
+                "i am fine",
+                "i am fine,thankyou",
+                " i'm fine",
+                "i am good",
+                "good"
+            ],
+            "responses": [
+                "Good to know!, how can i help you", "that's great...what do you need me for?", "good to hear...what you planning to do now?",
+                "that's great", "nice"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "what time should i set timer",
+                "at what time"
+            ]
+        },
+        {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question", "time to ask a riddle",
+                "Riddle", "ask a riddle", "tell me a riddle", "shoot a riddle", "riddle time"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you", "when were you made", "what is your age", "you were created on", "when were you born",
+                "what's your creation date", "when were you created", "creation date", "date of creation", "date of being coded"
+            ],
+            "responses": [
+                "I was born a month ago", "i'm a month old", "i'm 31 days old", "i was made in 2023", "i was coded a month ago",
+                "it's not polite to ask a lady her age", "i'm younger than you...if that's what you are asking", "i don't knoe my exact creation date cause my creators have memory of a 90 year old",
+                "don't know exact date of my creation but i'm a month old as of now"
+            ]
+        },
+        {
+            "tag": "date",
+            "patterns":[
+                "what is the current date?", "whats the date today?", "tell me the date", "date today", "let me know whats the date today",
+                "todays date?", "date"
+            ],
+            "responses":[
+                ""
+            ]
+        },
+        {
+            "tag": "open google",
+            "patterns":[
+                "open google", "open new google tab"
+            ],
+            "responses":[
+                "..."
+            ]
+        },
+        {
+            "tag": "open youtube",
+            "patterns":[
+                "open youtube"
+            ],
+            "responses":[
+                "..."
+            ]
+        },
+        {
+            "tag": "open stckovr",
+            "patterns":[
+                "open stack overflow", "open stackoverflow"
+            ],
+            "responses":[
+                "..."
+            ]
+        },
+        {
+            "tag": "open gmail",
+            "patterns":[
+                "open google mail", "open gmail"
+            ],
+            "responses":[
+                "..."
+            ]
+        },
+        {
+            "tag": "glocation",
+            "patterns":[
+                "find location", "find", "where is"
+            ],
+            "responses":[
+                "..."
+            ]
+        }
+    ]
+}
